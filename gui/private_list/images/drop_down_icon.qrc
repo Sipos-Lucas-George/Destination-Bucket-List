@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="drop_down_icon">
+    <file>drop_down.png</file>
+  </qresource>
+</RCC>

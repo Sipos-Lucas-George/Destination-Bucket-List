@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QWidget" name="bg_widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#bg_widget{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(63, 193, 234, 255), stop:1 rgba(255, 193, 234, 255));
+}</string>
+     </property>
+     <widget class="QListWidget" name="private_list_view">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>800</width>
+        <height>751</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListView {
+	border: none;
+	outline: none;
+	border-radius: 10px;
+   	background-color: white;
+   	padding: 10px;
+}
+QListView::item {
+   	border: none;
+	border-radius: 10px;
+   	padding: 10px;
+}
+QListView::item:selected {
+   	border: none;
+   	border-radius: 10px;
+   	color: black;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(63, 193, 234, 255), stop:1 rgba(255, 193, 234, 255));
+	/*background-color: #f0f0f0;*/
+}
+QListView::item:hover {
+   	border: none;
+   	border-radius: 10px;
+   	color: black;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(63, 193, 234, 255), stop:1 rgba(255, 193, 234, 255));
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="selectionRectVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="start_date_picker">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>300</y>
+        <width>141</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateEdit{
+	border-width: 0px;
+	border-style: solid;
+	border-radius: 13px;
+	font-size: 20px;
+	color: black;
+	padding-left: 5px;
+}
+QDateEdit::drop-down {
+	image: url(:/drop_down_icon/drop_down.png);
+	width: 26px;
+	height: 26px;
+}</string>
+      </property>
+      <property name="displayFormat">
+       <string>dd/MM/yyyy</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="geolocation_line_edit">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>60</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #fff;
+border-width: 0px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;
+padding-left: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>40</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Geolocation:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>100</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Title:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="title_line_edit">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>120</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #fff;
+border-width: 0px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;
+padding-left: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="image_line_edit">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>180</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #fff;
+border-width: 0px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;
+padding-left: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="description_line_edit">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>240</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #fff;
+border-width: 0px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;
+padding-left: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>160</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Image:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>220</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Description:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>280</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Start vacation:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="end_date_picker">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>300</y>
+        <width>141</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateEdit{
+	border-width: 0px;
+	border-style: solid;
+	border-radius: 13px;
+	font-size: 20px;
+	color: black;
+	padding-left: 5px;
+}
+QDateEdit::drop-down {
+	image: url(:/drop_down_icon/drop_down.png);
+	width: 26px;
+	height: 26px;
+}</string>
+      </property>
+      <property name="displayFormat">
+       <string>dd/MM/yyyy</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>1050</x>
+        <y>280</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;End vacation:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>60</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 1px;
+border-style: solid;
+border-radius: 10px;
+font-size: 28px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="show_image">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>360</y>
+        <width>640</width>
+        <height>480</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="openExternalLinks">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>810</y>
+        <width>801</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetNoConstraint</enum>
+       </property>
+       <item>
+        <widget class="QPushButton" name="make_favourite_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 1px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;</string>
+         </property>
+         <property name="text">
+          <string>Make Favourite</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="clear_selection_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 1px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;</string>
+         </property>
+         <property name="text">
+          <string>Clear Selection</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="delete_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 1px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;</string>
+         </property>
+         <property name="text">
+          <string>Delete Destination</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>1280</x>
+        <y>70</y>
+        <width>221</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>15</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="add_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 1px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;</string>
+         </property>
+         <property name="text">
+          <string>Add Destination</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="update_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 1px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;</string>
+         </property>
+         <property name="text">
+          <string>Update Destination</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="clear_fields_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 1px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;</string>
+         </property>
+         <property name="text">
+          <string>Clear Fields</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>geolocation_line_edit</tabstop>
+  <tabstop>title_line_edit</tabstop>
+  <tabstop>image_line_edit</tabstop>
+  <tabstop>description_line_edit</tabstop>
+  <tabstop>start_date_picker</tabstop>
+  <tabstop>end_date_picker</tabstop>
+  <tabstop>add_button</tabstop>
+  <tabstop>update_button</tabstop>
+  <tabstop>private_list_view</tabstop>
+  <tabstop>back</tabstop>
+ </tabstops>
+ <resources>
+  <include location="images/drop_down_icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

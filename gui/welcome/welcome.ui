@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QWidget" name="bg_widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#bg_widget{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(63, 193, 234, 255), stop:1 rgba(255, 193, 234, 255));
+}</string>
+     </property>
+     <widget class="QWidget" name="verticalWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>625</x>
+        <y>200</y>
+        <width>350</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 75 25pt &quot;Ubuntu&quot;;</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600;color: white&quot;&gt;Welcome&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">font: 75 25pt &quot;Ubuntu&quot;;</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:400; color:#ffffff;&quot;&gt;Log in or create a new account&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="login_button">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>400</y>
+        <width>300</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 1px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>Log In</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="signup_button">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>500</y>
+        <width>300</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 1px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>Sign Up</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>login_button</tabstop>
+  <tabstop>signup_button</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

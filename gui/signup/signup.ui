@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QWidget" name="bg_widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#bg_widget{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(63, 193, 234, 255), stop:1 rgba(255, 193, 234, 255));
+}</string>
+     </property>
+     <widget class="QWidget" name="verticalWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>625</x>
+        <y>100</y>
+        <width>350</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 75 25pt &quot;Ubuntu&quot;;</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#ffffff;&quot;&gt;Sign Up&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="signup_button">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>500</y>
+        <width>300</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 1px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>Sign Up</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="username_line_edit">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>270</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #fff;
+border-width: 0px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;
+padding-left: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="password_line_edit">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>350</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 0px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;
+padding-left: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>250</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Username:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>330</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>Password:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="warning_label">
+      <property name="geometry">
+       <rect>
+        <x>656</x>
+        <y>470</y>
+        <width>291</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: red;
+font: 25 12pt &quot;Umpush&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>410</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>Confirm Password:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="password_conf_line_edit">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>430</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 0px;
+border-style: solid;
+border-radius: 10px;
+font-size: 20px;
+padding-left: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>60</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-width: 1px;
+border-style: solid;
+border-radius: 10px;
+font-size: 28px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>username_line_edit</tabstop>
+  <tabstop>password_line_edit</tabstop>
+  <tabstop>password_conf_line_edit</tabstop>
+  <tabstop>signup_button</tabstop>
+  <tabstop>back</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
